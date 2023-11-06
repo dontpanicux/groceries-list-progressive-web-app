@@ -36,4 +36,12 @@ addToCartBtn.addEventListener('click', function(){
     // Give the event listener a function that takes our input value & adds (pushes) that value to our ShoppingList DB
     push(shoppingListInDB, currentInputValue)
     console.log(shoppingListInDB)
+    console.log(database)
+
+    clearInputField()
 })
+
+// clear input field once input value is captured
+function clearInputField(){
+    groceryInputField.value = ''
+}
