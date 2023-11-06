@@ -32,22 +32,29 @@ const currentShoppingList = document.getElementById('shopping-list-el')
 addToCartBtn.addEventListener('click', function(){
     //console.log('clicked the Add to Cart CTA')
     let currentInputValue = groceryInputField.value
-        // console.log(currentInputValue)
-    
-    // Give the event listener a function that takes our input value & adds (pushes) that value to our ShoppingList DB
-    push(shoppingListInDB, currentInputValue)
-    console.log(shoppingListInDB)
-    console.log(database)
-    //create a new li with currentInputValue as the content
-    const newListItem = document.createElement('li')
-    newListItem.textContent = currentInputValue
-    //append new li to currentShoppingList
-    currentShoppingList.append(newListItem)
 
+    // take currentInputValue and add it to shopplist in DB + UI
+    addToShoppingList(currentInputValue)
+
+    // clear our input field so that a user can add more items
     clearInputField()
 })
 
 // clear input field once input value is captured
 function clearInputField(){
     groceryInputField.value = ''
+}
+
+//
+function addToShoppingList(inputValue){
+    
+    // Give the event listener a function that takes our input value & adds (pushes) that value to our ShoppingList DB
+    push(shoppingListInDB, inputValue)
+    
+    //create a new li with currentInputValue as the content
+    const newListItem = document.createElement('li')
+    newListItem.textContent = inputValue
+    
+    //append new li to currentShoppingList
+    currentShoppingList.append(newListItem)
 }
