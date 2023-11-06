@@ -16,7 +16,7 @@ const database = getDatabase(app)
 
 // set the ref for our specific 'place' / location in the DB
 const shoppingListInDB = ref(database, 'shoppingList')
-console.log(shoppingListInDB)
+// console.log(shoppingListInDB)
 
 // Global Vars
 
@@ -24,6 +24,7 @@ const groceryInputField = document.getElementById('grocery-input-field')
     // console.log(groceryInputField)
 const addToCartBtn = document.getElementById('add-to-cart-btn')
     // console.log(addToCartBtn)
+const currentShoppingList = document.getElementById('shopping-list-el')
 
 // Core functions / interactivity
 
@@ -37,6 +38,11 @@ addToCartBtn.addEventListener('click', function(){
     push(shoppingListInDB, currentInputValue)
     console.log(shoppingListInDB)
     console.log(database)
+    //create a new li with currentInputValue as the content
+    const newListItem = document.createElement('li')
+    newListItem.textContent = currentInputValue
+    //append new li to currentShoppingList
+    currentShoppingList.append(newListItem)
 
     clearInputField()
 })
