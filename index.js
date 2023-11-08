@@ -56,7 +56,7 @@ onValue(shoppingListInDB, function(snapshot){
              //clear the current page
              clearCurrentShoppingList()
              
-             let shoppingListEntries = Object.entries(snapshot.val())
+             //let shoppingListEntries = Object.entries(snapshot.val())
              // console.log(shoppingListEntries)
          
              //store the key value pairs from the DB in separate usable Vars
@@ -75,7 +75,15 @@ onValue(shoppingListInDB, function(snapshot){
                  addToShoppingList(currentShoppingListItem, currentShoppingListKey)
              }
          } else {
-            currentShoppingList.innerHTML='Create a Shopping List by Adding items to Cart'
+            currentShoppingList.innerHTML=
+            `
+            <div id="get-started-content">
+                <p id="get-started-text">To Get Started</p>
+                <p>Type the Groceries you need</p>
+                <p>Add them to Your List</p>
+            </div>
+            
+            `
          }
      })
 
