@@ -1,5 +1,5 @@
 # Groceries List Progressive Web App with Firebase
- 'To-be-named' PWA helps users keep track the groceries they need in a single list and allows them to 'check off' grocery items as they buy them in realtime. For this project I'm using the Vanilla Frontend Stack of HTML, CSS, & JS and using Firebase Real Time Database to store user data. The design implementation is primarily meant for use as a PWA on mobile, but can also work as a regular Web App in any Browser.
+ 'To-be-named' PWA helps users keep track the groceries they need in a single list and allows them to 'check off' grocery items as they buy them in realtime. For this project I'm using the Vanilla Frontend Stack of HTML, CSS, & JS and using Firebase Real Time Database to store/fetch user data. The design implementation is primarily meant for use as a PWA on mobile, but can also work as a regular Web App in any Browser.
 
  This project is based off my Scrimba Frontend Development Bootcamp, 'Build a Mobile App with JS' project.
  
@@ -9,10 +9,10 @@
 
  * Adding user authentication with Firebase Auth
 
- * Improving the UX of adding, removing, and keeping track of items you've purchased in real time
+ * Improving the UX of adding, removing, and keeping track of items you've purchased in real time through interaction desingn & animation
 
- * Planning for an initial round of user testing & feedback gathering to learn about the App experience
+ * Planning for my first round of user testing & feedback gathering to learn about the App's experience
 
- You can check out the OG Design from the project here in Figma as well as see my in progress design work here in [My Figma Design File](https://www.figma.com/file/At2u7oMbodPh07X8CRiL6q/Module-3-Making-Websites-Interactive---Grocery-App-Design---Scrimba-Project-(WORKING-VERSION)?type=design&mode=design&t=gLwrAOTEEXscXu5r-1). 
+ You can check out the OG Design for the project as well as keep up with my progress through design sprints here in [My Figma Design File](https://www.figma.com/file/At2u7oMbodPh07X8CRiL6q/Module-3-Making-Websites-Interactive---Grocery-App-Design---Scrimba-Project-(WORKING-VERSION)?type=design&mode=design&t=gLwrAOTEEXscXu5r-1). 
 
  Thanks for checking out this project & feel free to reach out if you have questions or want to chat 🖖
