@@ -16,7 +16,7 @@ const database = getDatabase(app)
 
 // set the ref for our specific 'place' / location in the DB
 const shoppingListInDB = ref(database, "shoppingList")
-console.log(shoppingListInDB)
+// console.log(shoppingListInDB)
 
 
 // Global Vars
